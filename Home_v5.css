@@ -1,0 +1,169 @@
+/*--------------------------------------------VARIABILI GLOBALI----------------------------*/
+:root{
+    --text-color: rgb(82, 71, 72);#D60004;/* #524748;#61604E;*/
+    --font-size: 16px;
+    --font-fam: Cormorant Garamond;
+    --font-size_coupleName: 60px;
+    --font-size_coupleBot: 22px;
+    --font-size_secPageTitle: 30px;
+    --font-size_secPageDesc: 18px;
+    --font-size_h1_1: 22px;
+    --font-size_h3_1: 22px;
+    --font-size_h4_1: 22px;
+}
+/*____________________________________________MAIN DIV_____________________________________*/
+.mainDiv{ }
+/*--------------------------------------------HEADER---------------------------------------*/
+.headerStyle{top: 10%; left: 50%; }
+.coupleNameBot{
+    line-height: 1;    margin: 8px 0;    font-family: 'Cormorant Garamond';    letter-spacing: 3px;
+    color: var(--text-color);    font-size: var(--font-size);  font-weight: 500;    /*text-transform: uppercase;*/
+    text-align: center;
+}
+.coupleName {
+    line-height: 1; margin: 16px 0; font-family: 'Italiana'; color: var(--text-color); font-size: calc(var(--font-size_coupleName)*0.85);
+    font-weight: 600; letter-spacing: 8px; padding-top: 50px; padding-bottom: 15px;
+    text-align: center;
+}
+.headerHomeCssPicture { max-width: 100%; max-height: 120px; margin-bottom: 20px; width: 100%; height: auto; display:block;}
+.headerHomeImg{ max-width: 100%; height: auto; display: block; vertical-align: middle; width: 100%;}
+@media screen and (min-width: 768px){
+    .headerHomeCssPicture { display: block;}
+    .coupleName{font-size: var(--font-size_coupleName);}
+}
+
+/*-----------------------------------------FOOTER-------------------------------------------------------*/
+.footerHomeCss { align-items: center; display: flex; flex-direction: column; -webkit-box-pack: end; justify-content: flex-end;
+    margin-top: auto; position: relative; width: 100%;}
+.footerHomeCssDivMain { letter-spacing: 3.4px; line-height: 1; margin: 52px auto; text-align: center; width: fit-content;}
+.footerHomeCssLogoTitle { padding: 0 18px 16px; font-family: Italiana; color: var(--text-color); font-size: calc(var(--font-size_coupleName) *0.85); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 8px;}
+.footerHomeCssLogoData { padding: 20px 18px 0; font-family: Cormorant Garamond; letter-spacing: 3px; color: var(--text-color); font-size: var(--font-size_h1_1);
+    font-weight: 500; text-transform: uppercase; border-top: 1px solid var(--text-color);}
+.footerHomeCssPicture { width: 100%; max-height: 120px; z-index: -1; margin-top: -100px; display: block; height: auto;
+    max-width: 100%;}
+.footerHomeCssImg{width: 100%; max-width: 100%; height: auto; display: block; vertical-align: middle;}
+
+@media screen and (min-width: 768px){
+    .footerHomeCssLogoTitle{font-size: var(--font-size_coupleName);}
+}
+
+/* ---------------------Desktop navigation bar----------------------------------------------------------*/
+
+.navbarDeskHomeDiv { display: none; margin-top: 25px;}
+.navbarDeskHomeSubDiv { display: flex; flex-wrap: wrap; -webkit-box-pack: center; justify-content: center; margin: 0; padding: 8px 16px;}
+@media screen and (min-width: 768px){
+.navbarDeskHomeDiv { display: block; z-index: 1;}
+}
+.ulNav{display: flex;    flex-wrap: wrap;    -webkit-box-pack: center;    justify-content: center;}
+.liNav{display: inline-block; list-style: none; padding: 0 8px;}
+
+.navBarText { display: block; padding: 0; margin: 0; margin: 0; padding: 8px 0; text-decoration: none }
+.navTextUnderline {
+    font-family: Cormorant Garamond;    color: var(--text-color);    font-size: 18px;    font-weight: 500;
+    text-transform: none;    border-bottom: 2px solid transparent;    display: block;    letter-spacing: 2px;
+    line-height: 1;    margin: 0 auto;    padding: 8px 8px 6px;    text-decoration: none;    transition: all 0.25s;
+    width: -moz-fit-content;    width: fit-content;    border-bottom: 2px solid var(--text-color);
+}
+.navTextSimple {
+    font-family: Cormorant Garamond;    color: var(--text-color);    font-size: 18px;    font-weight: 500;
+    text-transform: none;    border-bottom: 2px solid transparent;    display: block;    letter-spacing: 2px;
+    line-height: 1;    margin: 0 auto;    padding: 8px 8px 6px;    text-decoration: none;    transition: all 0.25s;
+    width: -moz-fit-content;    width: fit-content;
+}
+.navTextSimple:hover{color:var(--text-color);border-bottom:2px solid var(--text-color);}
+
+/* --------------------------------NAV BAR PHONE ---------------------------------------------*/
+.navWiteBar { height: 56px; left: 0; position: fixed; top: 0; width: 100%; z-index: 18; background-color: #ffffff; display:none;}
+
+.navWiteBarTxT { -webkit-box-align: center; align-items: center; display: flex; height: 56px; -webkit-box-pack: center;
+            justify-content: center; width: 100%; font-family: Cormorant Garamond; color: var(--text-color); font-size: 30px;
+            font-weight: 500; text-transform: uppercase; letter-spacing: 3px; margin-top: 0px;     position: absolute; top: 0;}
+.css-1rf9dig {
+    display: block;
+    height: 40px;
+    left: 8px;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 8px;
+    width: 40px;
+    z-index: 19;
+}
+.css-bcsx0a {
+    background: none;
+    border: none;
+    font-size: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    padding: 0;
+    appearance: button;
+}
+@media screen and (max-width: 640px){
+    .navWiteBarTxT { font-size: calc(30px * 0.75);}
+    .navWiteBar{display:block;}
+}
+@media screen and (max-width: 768px){
+    .navWiteBarTxT { font-size: calc(30px * 0.75);}
+    .navWiteBar{display:block;}
+}
+
+
+/*-------------------------------CONTENUTO----------------------------------------------------*/
+.divContenuto { padding: 16px 0; width: 100%;}
+
+/*---------------------HOME--------------------------------------------*/
+
+.divHomeSplit {
+    line-height: 1.3; display: flex;    flex-direction: column;    -webkit-box-pack: center;    justify-content: center;
+    margin: 12px auto;    padding: 0px 16px;    width: fit-content;    font-family: "Cormorant Garamond";
+    color: var(--text-color);    font-size: 30px;    font-weight: 500;    letter-spacing: 4px;    text-transform: uppercase; margin-top: 30px;}
+.divHomeSplitLx {
+    padding: 0px 36px 20px;    border-bottom: 1px solid var(--text-color);}
+.divHomeSplitTxt { text-align: center; font-size: 1rem;}
+.divHomeSplitTxt br{display:none;}
+.divHomeSplitRx { padding: 20px 36px 0px;}
+
+@media screen and (min-width: 640px){
+    .divHomeSplit { flex-direction: row; margin: 52px auto 20px; }
+    .divHomeSplitTxt { text-align: center; font-size: 28px;}
+    .divHomeSplitTxt br{display:block;}
+    .divHomeSplitLx {
+    border-bottom: none; display: flex; -webkit-box-pack: end; justify-content: flex-end;
+    -webkit-box-align: center; align-items: center; padding: 20px 72px 20px 0px; width: 50%;
+    border-right: 1px solid var(--text-color);}
+
+    .divHomeSplitRx {
+    display: flex; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: center;
+    align-items: center; padding: 20px 0px 20px 72px; width: 50%;}
+}
+
+.homeDivInfo { margin: auto; max-width: 720px; padding: 0 20px; }
+.homeDivInfo_v1 { align-items: center; display: flex; flex-direction: column; margin: 48px 0 24px; text-align: center;}
+
+.weddingDayCss{ line-height: 1; margin: 32px 0 8px 0; font-family: Cormorant Garamond; color: var(--text-color);
+    font-size: 30px; font-weight: 500; text-transform: uppercase; letter-spacing: 3px;}
+.weddingDayCss_v1 { margin: 8px 0; font-family: Cormorant Garamond; letter-spacing: 3px; color: var(--text-color); font-size: var(--font-size_h1_1);
+    font-weight: 500; text-transform: uppercase;}
+
+.weddingDayCss_v2{ border-top: 1px solid rgba(82,71,72,15%);}
+.weddingDayCss_v2_v1 { display: flex; max-width: 720px; border-bottom: 1px solid rgba(82,71,72,15%); }
+.weddingDayCss_v2_v1_Sx{ overflow-wrap: break-word; padding: 12px 0; text-align: left; width: 100%; display: none;}
+.weddingDayCss_v2_v1_Dx { overflow-wrap: break-word; padding: 12px 0; text-align: left; width: 100%;}
+.weddingDayCss_v2_v1_Dx_small { margin: 12px 0; font-family: Cormorant Garamond; letter-spacing: 1px; color: var(--text-color);
+    font-size: 18px; font-weight: 500; text-transform: none;}
+ .weddingDayCss_v2_v1_Dx_smallData { line-height: 1; font-family: Cormorant Garamond;
+    margin: 16px 0; letter-spacing: 3px; color: var(--text-color); font-weight: 500; text-transform: uppercase;}
+
+.weddingDayCss_v2_v1_txt{ margin: 12px 0; line-height: 1; font-family: Cormorant Garamond; letter-spacing: 3px;
+    color: var(--text-color); font-size: 22px; font-weight: 500; text-transform: uppercase;}
+@media screen and (min-width: 720px){
+    .homeDivInfo { padding: 0;}
+    .weddingDayCss_v2_v1_Sx { display: block; min-width: 310px; width: 310px; text-align: end; padding: 32px 16px;}
+    .weddingDayCss_v2_v1_Dx { padding: 32px 16px;}
+    .weddingDayCss_v2_v1_Dx_smallData { display: none;}
+}
+
+.mapIcoSetting{width: 40px; padding-right: 15px; filter: invert(27%) sepia(5%) saturate(914%) hue-rotate(305deg) brightness(94%) contrast(88%);} /*https://isotropic.co/tool/hex-color-to-css-filter/*/
+

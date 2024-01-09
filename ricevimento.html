@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head file="head.html">
+    <script type="text/javascript" src="myScript.js"></script>
+    </head>
+    <body style="margin: 0px;">
+    <header file="header.html"></header>
+
+    <div class="mainDivOtherPage">
+        <div class="mainDivOtherPage_1">
+            <div class="mainDivOtherPage_11">
+            <h3 class="mainDivOtherPage_Title">Masseria Grande</h3>
+            <div class="mainDivOtherPage_subTitleDiv">
+                <p> I festeggiamenti si terranno presso Maseria grande taurisano </p>
+                <p> Non Mancate </p>
+            </div>
+            </div><div class="mainDivOtherPage_subTitleDiv" style="text-align: right;">
+                <a href="https://maps.app.goo.gl/WzS7spUwghfYHtmE7">
+                    <img src = "imgResources\icone\mappa_v2.png" class = "mapIcoSetting" alt="My Happy SVG" /></a>
+<!--                    https://www.urlencoder.io/-->
+                <a href="whatsapp://send?text=Il%20ricevimento%20si%20terr%C3%A0%20alle%2012%3A00%20presso%3A%0AMasseria%20Grande%0ALocalit%C3%A0%20masseria%20grande%2C%2073056%20Taurisano%20LE%0AMaps%3A%20https%3A%2F%2Fmaps.app.goo.gl%2FSHLthsgZV6WPFMXK8&type=custom_url&app_absent=0">
+                    <img src = "imgResources\icone\whatsapp.svg" class = "mapIcoSetting" alt="My Happy SVG"/></a>
+                <a href="tg://msg_url?url=Il%20ricevimento%20si%20terr%C3%A0%20alle%2012%3A00%20presso%3A%0AMasseria%20Grande%0ALocalit%C3%A0%20masseria%20grande%2C%2073056%20Taurisano%20LE%0AMaps%3A%20https%3A%2F%2Fmaps.app.goo.gl%2FSHLthsgZV6WPFMXK8&type=custom_url&app_absent=0">
+                    <img src = "imgResources\icone\telegram.svg" class = "mapIcoSetting" alt="My Happy SVG"/></a>
+            </div></div></div>
+
+<!--                _____________________GALLERIA______________________-->
+<!--GALLERIA Piccola-->
+    <div class="galleriaScacchiera" id="galleriaSmall"></div>
+<!--GALLERIA Grande-->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content" id="galleriaBig">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    </div>
+
+    </div></div></div>
+    <div class="galleriaScacchiera" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d195779.95030816572!2d18.200747!3d39.940009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134405af1e69d8cd%3A0x84135e76ca031929!2sMasseria%20Grande!5e0!3m2!1sit!2sit!4v1704791211628!5m2!1sit!2sit"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer file="footer.html"></footer>
+    <script>
+        caricaFotoDaFile_small("./imgLists/ricevimentoImgLinks.txt")
+        caricaFotoDaFile_big("./imgLists/ricevimentoImgLinks.txt")
+        includeHTMLheader("header", "ricevimentoLink");
+        includeHTML("footer");
+        includeHTML("head");
+    </script>
+    </body>
+</html>
+
+<!--GALLERIA Piccola-->
+<!--    <div class="galleriaScacchiera">-->
+<!--        <div class="galleriaScacchiera_photoDiv">-->
+<!--            <img src="https://onedrive.live.com/embed?resid=4178BD3398E2C3D2%21110713&authkey=%21AAJUHQB3OoDc5DE&width=1600&height=1200" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">-->
+<!--        </div>-->
+<!--        <div class="galleriaScacchiera_photoDiv">-->
+<!--            <img src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">-->
+<!--        </div>-->
+<!--        <div class="galleriaScacchiera_photoDiv">-->
+<!--            <img src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">-->
+<!--        </div>-->
+<!--        <div class="galleriaScacchiera_photoDiv">-->
+<!--            <img src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--GALLERIA grande miniature-->
+<!--        <div class="column">-->
+<!--          <img class="demo cursor" src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">-->
+<!--        </div>-->
+<!--        <div class="column">-->
+<!--          <img class="demo cursor" src="https://onedrive.live.com/embed?resid=4178BD3398E2C3D2%21110713&authkey=%21AAJUHQB3OoDc5DE&width=1600&height=1200" style="width:100%" onclick="currentSlide(2)" alt="Snow">-->
+<!--        </div>-->
+<!--        <div class="column">-->
+<!--          <img class="demo cursor" src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">-->
+<!--        </div>-->
+<!--        <div class="column">-->
+<!--          <img class="demo cursor" src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">-->
+<!--        </div>-->
+<!--      </div>-->
