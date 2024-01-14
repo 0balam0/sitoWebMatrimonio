@@ -153,3 +153,98 @@ var imgNumber = 1;
       });
 //      .catch(error => console.error(error));
 }
+//----google Photo load
+function listGoogleFolderFile(){
+    const apiKey = "AIzaSyB9sIIxnF3LTS6-7oN-D3HbV4ZGOz5ReT4";
+    const folderId = '1MRnPPdsmNHNHdtSG0sSpuKkNmdrmUQiC';
+//    https://drive.google.com/drive/folders/1MRnPPdsmNHNHdtSG0sSpuKkNmdrmUQiC?usp=sharing
+//GET https://www.googleapis.com/drive/v2/files?q=a1MRnPPdsmNHNHdtSG0sSpuKkNmdrmUQiC&key=AIzaSyB9sIIxnF3LTS6-7oN-D3HbV4ZGOz5ReT4
+    const apiUrl = `https://www.googleapis.com/drive/v3/files?q='${folderId}' in parents&key=${apiKey}`;
+    console.log(apiUrl);
+//    console.log(apiUrl);
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        const files = data.files;
+        if (files && files.length > 0) {
+          files.forEach(file => {
+            console.log(file.name, '(', file.id, ')');
+          });
+        } else {
+          console.log('No files found.');
+        }
+        })
+        .catch(error => {
+        console.error('Error:', error);
+    });
+}
+function caricaFotoDaGoogle_small(folderId){
+var imgNumber = 1;
+    const apiKey = "AIzaSyB9sIIxnF3LTS6-7oN-D3HbV4ZGOz5ReT4";
+//    const folderId = '1MRnPPdsmNHNHdtSG0sSpuKkNmdrmUQiC';
+const apiUrl = `https://www.googleapis.com/drive/v3/files?q='${folderId}' in parents&key=${apiKey}`;
+    console.log(apiUrl);
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById('galleriaSmall');
+        const containerBig = document.getElementById('galleriaBig');
+        const files = data.files;
+        if (files && files.length > 0) {
+            files.forEach(file => {
+//            costruisco le img piccole
+                const div = document.createElement('div');
+                div.classList.add("galleriaScacchiera_photoDiv");
+                div.id="placeHere";
+                var elem = document.createElement("img");
+                elem.setAttribute("src", "https://drive.google.com/uc?export=view&id="+file.id);
+                elem.setAttribute("alt","Immagine da Google Drive");
+                                elem.setAttribute("src", "https://drive.usercontent.google.com/download?export=view&authuser=0&id=1hEBbe4Jb6MbaDokcmCLorSpwvh66Xen3");
+
+                elem.setAttribute("style", "width:100%; max-height: 300px; ");
+                elem.setAttribute("onclick", "openModal();currentSlide("+imgNumber+")");
+                elem.setAttribute("class", "hover-shadow cursor")
+                container.appendChild(div);
+                document.getElementById("placeHere").appendChild(elem);
+                document.getElementById("placeHere").id="";
+                imgNumber=imgNumber+1;
+ //            costruisco le img grandi
+                const divBig = document.createElement('div');
+                divBig.classList.add("mySlides");
+                divBig.id="placeHere";
+                var elemBig = document.createElement("img");
+                elemBig.setAttribute("src", "https://drive.google.com/uc?export=view&id="+file.id);
+                elemBig.setAttribute("alt","Immagine da Google Drive");
+                                elemBig.setAttribute("src", "https://drive.usercontent.google.com/download?export=view&authuser=0&id=1hEBbe4Jb6MbaDokcmCLorSpwvh66Xen3");
+                elemBig.setAttribute("style", "width:100%;");
+                containerBig.appendChild(divBig);
+                document.getElementById("placeHere").appendChild(elemBig);
+                document.getElementById("placeHere").id="";
+            });
+        }
+    });
+}
+
+//    var imgNumber = 1;
+//    fetch(fileInput)
+//      .then(response => response.text())
+//      .then(data => {
+//        const lines = data.split('\n');
+//        const container = document.getElementById('galleriaSmall');
+//        lines.forEach(line => {
+//          const div = document.createElement('div');
+//          div.classList.add("galleriaScacchiera_photoDiv");
+//          div.id="placeHere";
+//          var elem = document.createElement("img");
+//          elem.setAttribute("src", line+256);
+//          elem.setAttribute("style", "width:100%");
+//          elem.setAttribute("onclick", "openModal();currentSlide("+imgNumber+")");
+//          elem.setAttribute("class", "hover-shadow cursor")
+//          container.appendChild(div);
+//          document.getElementById("placeHere").appendChild(elem);
+//          document.getElementById("placeHere").id="";
+//          imgNumber=imgNumber+1;
+//        });
+//      })
+////      .catch(error => console.error(error));
+//}

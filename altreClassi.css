@@ -33,22 +33,37 @@
 /*-------------------GALLERIA---------------------*/
 
 .galleriaScacchiera {
-    display: flex;
+   display: flex;
+    /*display: grid;
+    gap:10px;
+      margin: 20px;
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+
     flex-direction: row;
     margin: 24px auto 80px;
     width: 320px;
     flex-flow: wrap;
     -webkit-box-pack: center;
     justify-content: center;
+    align-items: center;
 }
 .galleriaScacchiera_photoDiv {
-    display: block;
+   display: block;
     max-width: 300px;
     max-height: 300px;
-    margin: 10px;
+    margin: 6px;
     width: 295px;
     object-fit: contain;
     cursor: pointer;
+
+/* overflow: hidden;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: transform 0.3s ease-in-out;*/
 }
 
 @media screen and (min-width: 700px){
