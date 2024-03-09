@@ -181,8 +181,7 @@ function listGoogleFolderFile(){
 function caricaFotoDaGoogle_small(folderId){
 var imgNumber = 1;
     const apiKey = "AIzaSyB9sIIxnF3LTS6-7oN-D3HbV4ZGOz5ReT4";
-//    const folderId = '1MRnPPdsmNHNHdtSG0sSpuKkNmdrmUQiC';
-const apiUrl = `https://www.googleapis.com/drive/v3/files?q='${folderId}' in parents&key=${apiKey}`;
+    const apiUrl = `https://www.googleapis.com/drive/v3/files?q='${folderId}' in parents&key=${apiKey}`;
     console.log(apiUrl);
     fetch(apiUrl)
     .then(response => response.json())
