@@ -197,9 +197,12 @@ const apiUrl = `https://www.googleapis.com/drive/v3/files?q='${folderId}' in par
                 div.classList.add("galleriaScacchiera_photoDiv");
                 div.id="placeHere";
                 var elem = document.createElement("img");
-                elem.setAttribute("src", "https://drive.google.com/uc?export=view&id="+file.id);
+//                https://www.googleapis.com/drive/v3/files/1c9biQJcw4hbG19iV318EPLet53LPSMSt?alt=media&key=AIzaSyB9sIIxnF3LTS6-7oN-D3HbV4ZGOz5ReT4
+                elem.setAttribute("src", "https://www.googleapis.com/drive/v3/files/"+file.id+'?alt=media&key='+apiKey);
+
+//                elem.setAttribute("src", "https://drive.google.com/uc?export=view&id="+file.id);
                 elem.setAttribute("alt","Immagine da Google Drive");
-                                elem.setAttribute("src", "https://drive.usercontent.google.com/download?export=view&authuser=0&id=1hEBbe4Jb6MbaDokcmCLorSpwvh66Xen3");
+//                                elem.setAttribute("src", "https://drive.usercontent.google.com/download?export=view&authuser=0&id=1hEBbe4Jb6MbaDokcmCLorSpwvh66Xen3");
 
                 elem.setAttribute("style", "width:100%; max-height: 300px; ");
                 elem.setAttribute("onclick", "openModal();currentSlide("+imgNumber+")");
@@ -213,9 +216,10 @@ const apiUrl = `https://www.googleapis.com/drive/v3/files?q='${folderId}' in par
                 divBig.classList.add("mySlides");
                 divBig.id="placeHere";
                 var elemBig = document.createElement("img");
-                elemBig.setAttribute("src", "https://drive.google.com/uc?export=view&id="+file.id);
+                 elemBig.setAttribute("src", "https://www.googleapis.com/drive/v3/files/"+file.id+'?alt=media&key='+apiKey);
+//                elemBig.setAttribute("src", "https://drive.google.com/uc?export=view&id="+file.id);
                 elemBig.setAttribute("alt","Immagine da Google Drive");
-                                elemBig.setAttribute("src", "https://drive.usercontent.google.com/download?export=view&authuser=0&id=1hEBbe4Jb6MbaDokcmCLorSpwvh66Xen3");
+//                                elemBig.setAttribute("src", "https://drive.usercontent.google.com/download?export=view&authuser=0&id=1hEBbe4Jb6MbaDokcmCLorSpwvh66Xen3");
                 elemBig.setAttribute("style", "width:100%;");
                 containerBig.appendChild(divBig);
                 document.getElementById("placeHere").appendChild(elemBig);
