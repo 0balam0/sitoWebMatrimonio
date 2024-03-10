@@ -74,7 +74,7 @@
 .navTextSimple:hover{color:var(--text-color);border-bottom:2px solid var(--text-color);}
 
 /* --------------------------------NAV BAR PHONE ---------------------------------------------*/
-.navWiteBar { height: 56px; left: 0; position: fixed; top: 0; width: 100%; z-index: 18; background-color: #ffffff; display:none;}
+.navWiteBar { height: 56px; left: 0; position: fixed; top: 0; width: 100%; z-index: 18; background-color: rgba(255, 255, 255, 0.5); display:none;}
 
 .navWiteBarTxT { -webkit-box-align: center; align-items: center; display: flex; height: 56px; -webkit-box-pack: center;
             justify-content: center; width: 100%; font-family: Cormorant Garamond; color: var(--text-color); font-size: 30px;

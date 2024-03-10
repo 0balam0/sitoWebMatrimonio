@@ -22,8 +22,15 @@
                   <li><a calss="HamburgerItemsTxt" href="./index.html" onclick="toggle_visibility('nannaLocation')">Home</a></li>
                   <li><a href="./cerimonia.html">Cerimonia</a></li>
                   <li><a href="./ricevimento.html">Ricevimento</a></li>
-                  <li><a href="./dovedormire.html">Dove dormire</a></li>
+<!--                  <li><a href="./dovedormire.html">Dove dormire</a></li>-->
                   <li><a href="./neiDintorni.html">Nei Dintorni</a></li>
+                      <li>
+                          <a onclick="hideShow('subitemMenu')" >Dove Dormire</a>
+                            <ul class="sub-menu" id="subitemMenu">
+                                <li style="margin-bottom: 6px;margin-top: 6px;"><a href="./dovedormire_Parenti.html">Parenti</a></li>
+                                <li><a href="./dovedormire_Amici.html">Amici</a></li>
+                            </ul>
+                      </li>
               </ul>
 <!--              <h1 class="navWiteBarTxT">M&amp;M</h1>-->
 <!--            &lt;!&ndash;          <img src = "C:\Users\matteo.demarco\OneDrive\Matrimonio\SitoWeb\Sito\imgResources\icone\geo-alt.svg" class = "mapIcoSetting" alt="My Happy SVG"/>&ndash;&gt;-->
@@ -47,9 +54,19 @@
                             <span class="navTextSimple" id="ricevimentoLink">Ricevimento</span> </a>
                     </li>
                     <li class="liNav">
-                        <a rel="nofollow" class="navBarText" href="./dovedormire.html">
+                        <a onclick="hideShow('subitemMenu2')" rel="nofollow" class="navBarText">
                             <span class="navTextSimple" id="dovedormireLink">Dove Dormire</span> </a>
+                        <ul class="ulNav" style="display:none;" id="subitemMenu2">
+                            <a rel="nofollow" class="navBarText" href="./dovedormire_Parenti.html">
+                                <span class="navTextSimple" id="doveDormire_Parenti">Parenti</span> </a>
+                            <a rel="nofollow" class="navBarText" href="./dovedormire_Amici.html">
+                                <span class="navTextSimple" id="doveDormire_Amici">Amici</span> </a>
+                        </ul>
                     </li>
+<!--                    <li class="liNav">-->
+<!--                        <a rel="nofollow" class="navBarText" href="./dovedormire.html">-->
+<!--                            <span class="navTextSimple" id="dovedormireLink">Dove Dormire</span> </a>-->
+<!--                    </li>-->
                     <li class="liNav">
                         <a rel="nofollow" class="navBarText" href="./neiDintorni.html">
                             <span class="navTextSimple" id="neiDintorniLink">Nei Dintorni</span> </a>

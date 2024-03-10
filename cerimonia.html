@@ -25,17 +25,48 @@
 
 <!--                _____________________GALLERIA______________________-->
 <!--GALLERIA Piccola-->
-    <div class="galleriaScacchiera" id="galleriaSmall"></div>
-<!--GALLERIA Grande-->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content" id="galleriaBig">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="caption-container">
-          <p id="caption"></p>
+    <div class="galleriaScacchiera">
+        <div class="galleriaScacchiera_photoDiv">
+            <img src=".\imgResources\Cerimonia\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(1)" class="hover-shadow cursor">
         </div>
-      </div>
+        <div class="galleriaScacchiera_photoDiv">
+            <img src=".\imgResources\Cerimonia\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="galleriaScacchiera_photoDiv">
+            <img src=".\imgResources\Cerimonia\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="galleriaScacchiera_photoDiv">
+            <img src=".\imgResources\Cerimonia\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="galleriaScacchiera_photoDiv">
+            <img src=".\imgResources\Cerimonia\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(5)" class="hover-shadow cursor">
+        </div>
+    </div>
+<!--GALLERIA Grande-->
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
+        <div class="modal-content">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\Cerimonia\1.png" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\Cerimonia\2.png" onclick="currentSlide(2)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\Cerimonia\3.png" onclick="currentSlide(3)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\Cerimonia\4.png" onclick="currentSlide(4)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\Cerimonia\5.png" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+        </div>
+
     </div>
     <div class="galleriaScacchiera" >
 <!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1529.1284212110693!2d18.02596873509628!3d39.95800992411762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346a9d26b4ff21d%3A0x5da60fbc1ac7fb76!2sParrocchia%20della%20Beata%20Vergine%20Maria%20Maris%20Stella!5e0!3m2!1sit!2sit!4v1704817559238!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->

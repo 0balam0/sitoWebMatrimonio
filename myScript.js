@@ -1,4 +1,12 @@
 var mesi = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+function hideShow(id){
+    el = document.getElementById(id);
+    if (el.checkVisibility() == true){
+        el.style.display = 'none';
+    }else{
+        el.style.display = 'block';
+    }
+}
 
 function differenzaInGiorni() {
   const d1 = new Date();
@@ -61,16 +69,19 @@ function includeHTMLheader(Tag, idUnderline,cb) {
   if (cb) cb();
 }
 // ------------------------GALLERIA
-function openModal() {
-  document.getElementById("myModal").style.display = "block";}
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";}
+function openModal(modalName) {
+  document.getElementById(modalName).style.display = "block";}
+function closeModal(modalName) {
+  document.getElementById(modalName).style.display = "none";}
 
 var slideIndex = 1; showSlides(slideIndex);
-
 function plusSlides(n) { showSlides(slideIndex += n);}
-
 function currentSlide(n) {showSlides(slideIndex = n);}
+
+var slideIndex2 = 1; showSlides(slideIndex);
+function plusSlides2(n) { showSlides(slideIndex2 += n);}
+function currentSlide2(n) {showSlides(slideIndex2 = n);}
+
 
 function showSlides(n) {
   var i;
@@ -87,7 +98,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+//  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 //
 function caricaFotoDaFile_small(fileInput){

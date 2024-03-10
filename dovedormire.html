@@ -6,6 +6,7 @@
     <body style="margin: 0px;">
     <header file="header.html"></header>
 
+<!--##################################################################################################################################################àà-->
     <div class="mainDivOtherPage">
         <div class="mainDivOtherPage_1">
             <div class="mainDivOtherPage_11">
@@ -28,47 +29,52 @@
 <!--GALLERIA Piccola-->
     <div class="galleriaScacchiera">
         <div class="galleriaScacchiera_photoDiv">
-            <img src="https://onedrive.live.com/embed?resid=4178BD3398E2C3D2%21110713&authkey=%21AAJUHQB3OoDc5DE&width=1600&height=1200" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <img src=".\imgResources\nanna1\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(1)" class="hover-shadow cursor">
         </div>
         <div class="galleriaScacchiera_photoDiv">
-            <img src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <img src=".\imgResources\nanna1\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(2)" class="hover-shadow cursor">
         </div>
         <div class="galleriaScacchiera_photoDiv">
-            <img src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <img src=".\imgResources\nanna1\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(3)" class="hover-shadow cursor">
         </div>
         <div class="galleriaScacchiera_photoDiv">
-            <img src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <img src=".\imgResources\nanna1\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="galleriaScacchiera_photoDiv">
+            <img src=".\imgResources\nanna1\1.jpg" style="width:100%" onclick="openModal('myModal');currentSlide(5)" class="hover-shadow cursor">
         </div>
     </div>
 <!--GALLERIA Grande-->
 
     <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content" id="galleriaBig">
-          <div class="column">
-          <img class="demo cursor" src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="https://onedrive.live.com/embed?resid=4178BD3398E2C3D2%21110713&authkey=%21AAJUHQB3OoDc5DE&width=1600&height=1200" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="https://media-api.xogrp.com/images/a32e0df2-acd3-40f7-a7ac-9c8a8c93a5c8~rt_auto-sc_300.300?ordering=explicit" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-      </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-    </div>
+        <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
+        <div class="modal-content">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\nanna1\1.png" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\nanna1\2.png" onclick="currentSlide(2)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\nanna1\3.png" onclick="currentSlide(3)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\nanna1\4.png" onclick="currentSlide(4)" alt="Nature and sunrise">
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img loading="lazy" class="demo cursor imgSize" src=".\imgResources\nanna1\5.png" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+        </div>
+
+    </div>
     <div class="galleriaScacchiera" >
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.754948858208!2d18.019411290582635!3d40.036250298026886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346a7955025007d%3A0x6bc126325c7816f4!2sMasseria%20Le%20Dimore!5e0!3m2!1sit!2sit!4v1704793129332!5m2!1sit!2sit"
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
     <footer file="footer.html"></footer>
     <script>
 <!--        caricaFotoDaGoogle_small("1PxcXreh_8aDVu1A4sVRhF8of_pVgKKKH")-->

@@ -42,7 +42,7 @@
 
     flex-direction: row;
     margin: 24px auto 80px;
-    width: 320px;
+    /*width: 320px;*/
     flex-flow: wrap;
     -webkit-box-pack: center;
     justify-content: center;
@@ -50,8 +50,8 @@
 }
 .galleriaScacchiera_photoDiv {
    display: block;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 150px;
+    /*max-height: 300px;*/
     margin: 6px;
     width: 295px;
     object-fit: contain;
@@ -158,4 +158,20 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imgSize{
+    width: 100%;
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+.sub-menu{
+    display: none;
 }
