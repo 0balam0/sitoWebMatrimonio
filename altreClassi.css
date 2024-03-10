@@ -1,5 +1,7 @@
 
-.mainDivOtherPage{ padding: 16px 0; width: 100%;}
+.mainDivOtherPage{ padding: 16px 0; width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;}
 .mainDivOtherPage_1{ padding: 16px 0; width: 100%;}
 .mainDivOtherPage_11 { display: block; -webkit-box-pack: center; justify-content: center;
     flex-wrap: wrap;flex-basis: 100%;}
